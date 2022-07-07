@@ -1,9 +1,6 @@
 import { createContext, useState } from 'react';
-
 const UserContext = createContext();
-
 export function UserProvider({children}) {
-
     const [user, setUser] = useState({
       UserId: "",
       password: "",
@@ -20,5 +17,4 @@ export function UserProvider({children}) {
       </UserContext.Provider>
     )
   }
-  
-  export default UserContext;
+   export default UserContext;
